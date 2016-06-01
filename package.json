@@ -4,7 +4,13 @@
   "description": "",
   "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "catw -c 'lessc -' 'src/*.less' -o build/app.css -v",
+"watch-js": "watchify src/*.js -o build/app.js -dv",
+"watch": "npm run watch-css & npm run watch-js",
+"build-css": "catw -c 'lessc -' 'src/*.less' > build/app.css",
+"build-js": "browserify src/*.js > build/app.js",
+"build": "npm run build-css && npm run build-js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/lequangphuong/react-less/issues"
   },
-  "homepage": "https://github.com/lequangphuong/react-less#readme"
+  "homepage": "https://github.com/lequangphuong/react-less#readme",
+  "dependencies": {
+    "browserify": "^13.0.1",
+    "less": "^2.7.1"
+  },
+  "devDependencies": {
+    "catw": "^1.0.1",
+    "watchify": "^3.7.0"
+  }
 }
