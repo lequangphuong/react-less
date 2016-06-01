@@ -1,0 +1,19 @@
+{
+  "name": "react-less",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lequangphuong/react-less.git"
+  },
+  "author": "phuonglq",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lequangphuong/react-less/issues"
+  },
+  "homepage": "https://github.com/lequangphuong/react-less#readme"
+}
